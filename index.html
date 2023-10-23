@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1a772bb0a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Traveler and Aspiring Web Developer</p>
+                <h1>Hi, I'm<span> Andie</span> Centeno from<br> College of Computer Studies</h1>
+            </div>
+        </div>
+    </div>
+    <!-------About------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Profile.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <P>My passions for playing the guitar, indulging in video games, and traveling have collectively shaped who I am. They represent my need for creativity, immersion, and exploration. These passions have not only brought joy and excitement to my life but have also instilled in me valuable life skills such as discipline, problem-solving, and adaptability. They've allowed me to discover my own identity and have opened my eyes to the incredible world we live in. In the end, it's these passions that make me who I am, and I look forward to nurturing them throughout my life, ever eager to see where they will take me next.</P>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI</span><br>Designing Web</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Marketing and Sales Officer</li>
+                            <li><span>2019 - 2023</span><br>On-call Team Building Facilitator</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Bachelor of Science in Information Technology at Pamantasan ng Lungsod ng San Pablo</li>
+                            <li><span>2019 - 2021</span><br>Bachelor of Science in Information Technology at Laguna State Polytechnic University</li>
+                            <li><span>2019</span><br>National Certificate II in Computer Systems Servicing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------Services------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is a dynamic and evolving field, with trends and technologies continually changing. Successful web designers stay current with these trends, adapt to new technologies, and refine their skills to create effective and attractive websites.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI Design</h2>
+                    <p>UI design is a collaborative process that often involves working closely with UX (User Experience) designers, researchers, and developers to create a seamless and effective user interface. The goal is to make digital interactions as smooth and enjoyable as possible, ultimately leading to a positive user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-camera"></i>
+                    <h2>Photography</h2>
+                    <p>Photography is a versatile medium that can be both a personal hobby and a professional career. It enables individuals to capture the beauty of the world, share stories, and communicate their perspectives through the visual language of images. Whether it's a snapshot of a family event, a breathtaking landscape, or a thought-provoking documentary series, photography has the power to impact and inspire.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------Portfolio------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Destinations</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/image7.jpg">
+                    <div class="layer">
+                        <h3>Calatagan, Batangas</h3>
+                        <p>June 3, 2023</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/image9.jpg">
+                    <div class="layer">
+                        <h3>Baguio, City</h3>
+                        <p>July 19, 2023</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/image5.jpg">
+                    <div class="layer">
+                        <h3>La Union</h3>
+                        <p>May 20, 2023</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-------Contact-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> centeno.j.andie@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +63 (919) 543 3719</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/andie.centeno"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/andiecent_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/Andie-Centeno_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Andie Centeno. Made with <i class="fa-solid fa-heart"></i> by Visual Studio Code</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+</html>
